@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="EggUnfertBase">
+    <defName>EggDesertChickenUnfertilized</defName>
+    <label>desert chicken egg (unfert.)</label>
+    <description>Unfertilized desert chicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggDesertChickenFertilized</defName>
+    <label>desert chicken egg (fert.)</label>
+    <description>Fertilized desert chicken egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>DesertChicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
